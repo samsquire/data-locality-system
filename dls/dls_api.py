@@ -231,7 +231,7 @@ def run_group(propagate, spans, host_name, group_name, start_task=None, span_con
                    operation_name=span_name,
                    child_of=span_context)
                 tracer.inject(
-                   span_context=outbound_span,
+                   span_context=interop_span,
                    format=Format.HTTP_HEADERS,
                    carrier=headers)
 
