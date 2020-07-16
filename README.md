@@ -20,6 +20,8 @@ To run the example, start the following in separate terminals:
 
 ```
 export WORKER_HOST=database ; sudo -E $(which gunicorn) -w 1 -k gevent  dls_example:app --bind 0.0.0.0:9006
+```
+```
 export WORKER_HOST=app ; sudo -E $(which gunicorn) -w 1 -k gevent  dls_example:app --bind 0.0.0.0:9005
 ```
 
