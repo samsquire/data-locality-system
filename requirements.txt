@@ -1,0 +1,7 @@
+flask
+pyyaml
+networkx
+ortools
+opentracing
+redis
+psycopg2
