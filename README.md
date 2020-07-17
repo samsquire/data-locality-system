@@ -1,6 +1,6 @@
 # data-locality-system
 
-DLS is a library and pattern that tries to keep data and processing near together for latency and performance.
+DLS is a library and pattern that tries to keep data and processing near together for latency and performance. It's very much early in development.
 
 # Usage
 
@@ -8,9 +8,9 @@ Split up your API request handler into a series of methods with each method bein
 
 Automatically
 
-* OpenTracing wraps all your spans
+* OpenTracing Jaegar wraps all your spans. Run the [all in one jaegar docker image](https://www.jaegertracing.io/docs/1.18/getting-started/) to see examples.
 * Requests are routed to servers which are favourable
-* Requests run in parallel using threads.
+* Requests run in parallel using a threadpool.
 
 Run each DLS service using Gunicorn.
 
