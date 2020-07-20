@@ -8,13 +8,15 @@ Split up your API request handler into a series of methods with each method bein
 
 Automatically
 
-* OpenTracing Jaegar wraps all your spans. Run the [all in one jaegar docker image](https://www.jaegertracing.io/docs/1.18/getting-started/) to see examples.
+* OpenTracing Jaegar wraps all your spans.
 * Requests are routed to servers which are favourable
 * Requests run in parallel using a threadpool.
 
 Run each DLS service using Gunicorn.
 
 # Example
+
+Run the [all in one jaegar docker image](https://www.jaegertracing.io/docs/1.18/getting-started/) and go to http://localhost:16686/ and filter by service dls to see Jaegar tracing.
 
 To run the example, start the following in separate terminals:
 
