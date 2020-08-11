@@ -2,6 +2,8 @@
 
 DLS is a library and pattern that tries to keep data and processing near together for latency and performance. It's very much early in development.
 
+[Please read this article to understand DLS](https://medium.com/@samuelmichaelsquire/designing-the-data-locality-system-f2d778883b35)
+
 # Usage
 
 Split up your API request handler into a series of methods with each method being responsible for some API call or processing.
